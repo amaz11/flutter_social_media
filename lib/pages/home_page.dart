@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:socialmedia/api/auth_service.dart';
+import 'package:socialmedia/widget/mydrawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -22,6 +23,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: const Center(child: Text("Home page")),
+      drawer: const MyDrawer(),
     );
   }
 }

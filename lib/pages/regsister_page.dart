@@ -101,7 +101,10 @@ class _SignUpPageState extends State<SignUpPage> {
                 ElevatedButton(
                     onPressed: () {
                       FireBaseAuthService()
-                          .signUP(email: _email.text, password: _password.text)
+                          .signUP(
+                              email: _email.text,
+                              password: _password.text,
+                              name: _userName.text)
                           .then((value) => displayMessage(value!, context));
                       _userName.clear();
                       _email.clear();
